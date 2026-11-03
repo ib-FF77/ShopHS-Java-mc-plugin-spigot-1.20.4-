@@ -1,0 +1,19 @@
+name: ShopHs
+version: 1.0.0
+main: com.ibff77.shophs.ShopHs
+api-version: '1.20'
+author: ib-FF77
+description: Simple item shop with GUI and Vault economy support
+softdepend: [Vault]
+commands:
+  shophs:
+    description: Open the shop or manage its items
+    usage: /<command> [add <price> | remove <row> | info]
+    permission: shophs.use
+permissions:
+  shophs.use:
+    description: Open the shop and buy items
+    default: true
+  shophs.admin:
+    description: Add and remove shop items
+    default: op
